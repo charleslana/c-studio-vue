@@ -17,20 +17,21 @@
     <MDBNavbarToggler
       @click="collapse1 = !collapse1"
       target="#navbarSupportedContent"
+      :toggler-icon="collapse1 ? 'x' : 'bars'"
     ></MDBNavbarToggler>
     <MDBCollapse v-model="collapse1" id="navbarSupportedContent">
       <MDBNavbarNav right>
-        <MDBNavbarItem href="#about" class="nav-link-custom"
+        <MDBNavbarItem href="#about" class="nav-link-custom fw-500"
           >Sobre</MDBNavbarItem
         >
-        <MDBNavbarItem href="#games" class="nav-link-custom"
+        <MDBNavbarItem href="#games" class="nav-link-custom fw-500"
           >Jogos</MDBNavbarItem
         >
-        <MDBNavbarItem href="#about" class="nav-link-custom"
-          >Contato</MDBNavbarItem
+        <MDBNavbarItem href="#team" class="nav-link-custom fw-500"
+          >Equipe</MDBNavbarItem
         >
-        <MDBNavbarItem href="#support" class="nav-link-custom"
-          >Suporte</MDBNavbarItem
+        <MDBNavbarItem href="#about" class="nav-link-custom fw-500"
+          >Contato</MDBNavbarItem
         >
       </MDBNavbarNav>
     </MDBCollapse>
@@ -60,10 +61,6 @@ window.console.warn = e => {
 
 <style>
 @import url('../assets/fonts/fontawesome/css/all.min.css');
-
-body {
-  padding-top: 85px;
-}
 
 .navbar-dark-custom {
   background-color: rgba(0, 0, 0, 0.8);

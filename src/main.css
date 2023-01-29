@@ -1,0 +1,16 @@
+@import url('./assets/fonts/raleway/raleway.css');
+@import url('./assets/fonts/bungee/bungee.css');
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #131313;
+  color: white;
+}
+
+:root {
+  --orange: #e48632;
+}
+
+.fw-500 {
+  font-weight: 500;
+}

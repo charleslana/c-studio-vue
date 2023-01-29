@@ -4,11 +4,16 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "build": "rm -rf dist && vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "production": "vue-cli-service serve --mode production",
+    "prod": "npm run build && npx serve dist"
   },
   "dependencies": {
+    "animate.css": "^4.1.1",
     "core-js": "^3.8.3",
+    "createjs-module": "^0.8.3",
+    "gsap": "^3.11.4",
     "mdb-vue-ui-kit": "^3.2.0",
     "vue": "^3.2.13"
   },
