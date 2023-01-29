@@ -1,27 +1,74 @@
+<!-- <template>
+  <HelloWorld
+    msg="Thank you for using our product. We're glad you're with us."
+  />
+</template> -->
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
+  <NavBar />
+  <ul>
+    <li v-for="item in items" v-bind:key="item">{{ item }}</li>
+    <li id="about">About</li>
+  </ul>
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
-import HelloWorld from "./components/HelloWorld.vue";
+// import HelloWorld from "./components/HelloWorld.vue";
+import NavBar from './components/NavBar.vue';
 
-export default defineComponent({
-  name: "App",
+export default {
+  name: 'App',
   components: {
-    HelloWorld,
+    // HelloWorld,
+    NavBar,
   },
-});
+  data() {
+    return {
+      items: [
+        'Hello world 1',
+        'Hello world',
+        'Hello world',
+        'Hello world',
+        'Hello world',
+        'Hello world',
+        'Hello world',
+        'Hello world',
+        'Hello world',
+        'Hello world',
+        'Hello world',
+        'Hello world',
+        'Hello world',
+        'Hello world',
+        'Hello world',
+        'Hello world',
+        'Hello world',
+        'Hello world',
+        'Hello world',
+        'Hello world',
+        'Hello world',
+        'Hello world',
+        'Hello world',
+        'Hello world',
+        'Hello world',
+        'Hello world',
+        'Hello world',
+        'Hello world',
+        'Hello world',
+        'Hello world',
+        'Hello world',
+        'Hello world',
+        'Hello world',
+        'Hello world',
+        'Hello world',
+      ],
+    };
+  },
+};
 </script>
 
 <style>
+@import url('./assets/fonts/raleway/raleway.css');
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  font-family: 'Raleway', sans-serif;
 }
 </style>
