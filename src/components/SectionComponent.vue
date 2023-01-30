@@ -1,5 +1,5 @@
 <template>
-  <MDBContainer class="mt-5 pt-5" :id="id">
+  <MDBContainer class="mt-5" :id="id">
     <div class="row">
       <div class="col-md-auto">
         <h2 class="text-uppercase" :data-text="lastWorld">{{ firstWorld }}</h2>

@@ -57,6 +57,8 @@ export default defineComponent({
         'img/logo.3336880e.png',
         'img/bg.117ff626.jpg',
         'img/about.268b6487.png',
+        'img/games.117ff626.jpg',
+        'img/team.55b40d4c.png',
       ]);
       queue.addEventListener('complete', this.hideLoading);
     },

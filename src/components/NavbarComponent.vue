@@ -30,7 +30,7 @@
         <MDBNavbarItem href="#team" class="nav-link-custom fw-500"
           >Equipe</MDBNavbarItem
         >
-        <MDBNavbarItem href="#about" class="nav-link-custom fw-500"
+        <MDBNavbarItem href="#contact" class="nav-link-custom fw-500"
           >Contato</MDBNavbarItem
         >
       </MDBNavbarNav>
