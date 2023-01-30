@@ -8,8 +8,8 @@
       <div class="row align-items-center">
         <div class="col-md-6 text-center">
           <span class="text-white span"
-            >Charles Studio © <span class="year">2023</span>. Todos os direitos
-            reservados. Desenvolvido no Brasil.</span
+            >Charles Studio © {{ year }}. Todos os direitos reservados.
+            Desenvolvido no Brasil.</span
           >
         </div>
         <div class="col-md-6">
@@ -39,6 +39,16 @@
 
 <script setup lang="ts">
 import { MDBFooter, MDBContainer } from 'mdb-vue-ui-kit';
+</script>
+
+<script lang="ts">
+export default {
+  data() {
+    return {
+      year: new Date().getFullYear(),
+    };
+  },
+};
 </script>
 
 <style scoped>
