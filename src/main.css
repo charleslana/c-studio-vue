@@ -1,5 +1,6 @@
 @import url('./assets/fonts/raleway/raleway.css');
 @import url('./assets/fonts/bungee/bungee.css');
+@import url('./assets/fonts/fontawesome/css/all.min.css');
 
 body {
   font-family: 'Raleway', sans-serif;

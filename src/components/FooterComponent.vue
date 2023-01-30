@@ -37,12 +37,15 @@
   </MDBFooter>
 </template>
 
-<script setup lang="ts">
-import { MDBFooter, MDBContainer } from 'mdb-vue-ui-kit';
-</script>
-
 <script lang="ts">
+import { MDBFooter, MDBContainer } from 'mdb-vue-ui-kit';
+
 export default {
+  name: 'FooterComponent',
+  components: {
+    MDBFooter,
+    MDBContainer,
+  },
   data() {
     return {
       year: new Date().getFullYear(),

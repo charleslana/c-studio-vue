@@ -13,6 +13,7 @@
 </template>
 
 <script lang="ts">
+import { MDBProgress, MDBProgressBar } from 'mdb-vue-ui-kit';
 import { defineComponent } from 'vue';
 import gsap, { Power4 } from 'gsap';
 import 'animate.css';
@@ -20,6 +21,10 @@ import * as createjs from 'createjs-module';
 
 export default defineComponent({
   name: 'LoadingComponent',
+  components: {
+    MDBProgress,
+    MDBProgressBar,
+  },
   data() {
     return {
       isLoading: true,
@@ -64,10 +69,6 @@ export default defineComponent({
     },
   },
 });
-</script>
-
-<script setup lang="ts">
-import { MDBProgress, MDBProgressBar } from 'mdb-vue-ui-kit';
 </script>
 
 <style scoped>

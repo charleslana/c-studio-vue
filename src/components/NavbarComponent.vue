@@ -15,11 +15,11 @@
       />
     </MDBNavbarBrand>
     <MDBNavbarToggler
-      @click="collapse1 = !collapse1"
+      @click="collapse = !collapse"
       target="#navbarSupportedContent"
-      :toggler-icon="collapse1 ? 'x' : 'bars'"
+      :toggler-icon="collapse ? 'x' : 'bars'"
     ></MDBNavbarToggler>
-    <MDBCollapse v-model="collapse1" id="navbarSupportedContent">
+    <MDBCollapse v-model="collapse" id="navbarSupportedContent">
       <MDBNavbarNav right>
         <MDBNavbarItem href="#about" class="nav-link-custom fw-500"
           >Sobre</MDBNavbarItem
@@ -49,19 +49,10 @@ import {
 } from 'mdb-vue-ui-kit';
 import { ref } from 'vue';
 
-const collapse1 = ref(false);
-
-const originalWarn = window.console.warn;
-window.console.warn = e => {
-  return e.includes('If this is a native custom element')
-    ? ''
-    : originalWarn(e);
-};
+const collapse = ref(false);
 </script>
 
 <style>
-@import url('../assets/fonts/fontawesome/css/all.min.css');
-
 .navbar-dark-custom {
   background-color: rgba(0, 0, 0, 0.8);
 }
