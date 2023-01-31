@@ -24,9 +24,18 @@ export default defineComponent({
     MDBContainer,
   },
   props: {
-    title: String,
-    description: String,
-    id: String,
+    title: {
+      type: String,
+      required: true,
+    },
+    description: {
+      type: String,
+      required: true,
+    },
+    id: {
+      type: String,
+      required: true,
+    },
   },
   data() {
     return {
