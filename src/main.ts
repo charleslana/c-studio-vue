@@ -1,6 +1,7 @@
 import 'mdb-vue-ui-kit/css/mdb.min.css';
 import { createApp } from 'vue';
 import App from './App.vue';
+import 'animate.css';
 import './main.css';
 import handleWarn from './utils/utils';
 

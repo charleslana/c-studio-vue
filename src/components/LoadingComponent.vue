@@ -16,7 +16,6 @@
 import { MDBProgress, MDBProgressBar } from 'mdb-vue-ui-kit';
 import { defineComponent } from 'vue';
 import gsap, { Power4 } from 'gsap';
-import 'animate.css';
 import * as createjs from 'createjs-module';
 
 export default defineComponent({
